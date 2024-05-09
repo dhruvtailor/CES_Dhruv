@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:text="Enroll Student"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etStudentName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Enter student name"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColor="#000000"
+        android:textColorHint="#635555"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+    <TextView
+        android:id="@+id/tvErrorStudentName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Please enter student name"
+        android:textColor="#ff0000"
+        android:textSize="16sp"
+        android:ems="10"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/etStudentName"/>
+
+    <EditText
+        android:id="@+id/etClassEnroll"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Enter class to be enrolled"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColor="#000000"
+        android:textColorHint="#635555"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvErrorStudentName" />
+
+    <TextView
+        android:id="@+id/tvErrorClassEnroll"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Please enter class to be enrolled"
+        android:textColor="#ff0000"
+        android:textSize="16sp"
+        android:ems="10"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/etClassEnroll"/>
+
+    <Button
+        android:id="@+id/btnEnroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Enroll"
+        app:layout_constraintTop_toBottomOf="@+id/tvErrorClassEnroll" />
+
+    <Button
+        android:id="@+id/btnViewDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="View Details"
+        app:layout_constraintTop_toBottomOf="@+id/btnEnroll" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
